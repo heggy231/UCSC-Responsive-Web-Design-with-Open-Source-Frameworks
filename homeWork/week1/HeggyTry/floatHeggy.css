@@ -1,0 +1,20 @@
+/* 
+read this to learn about float clear:both; content:"";
+http://learn.shayhowe.com/html-css/positioning-content/ */
+html {font-size: 100%;}
+
+.row {
+  /* width gives the spacing around the text not plush against edge */
+  width: 100%;
+  margin: 0 auto;
+  background: #fafafa;
+}
+
+.box {
+  float: left;
+  width: 25%;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+
+}
