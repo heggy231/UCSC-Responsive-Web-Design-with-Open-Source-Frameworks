@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Display-Responsive</title>
+    <!-- reset stylesheet is to reduce browser inconsistencies in things like default line heights, margins and font sizes of headings -->
+    <link rel='stylesheet' href='../CSSReset/eric-meyer-reset.min.css' type='text/css' media='all' >
+    <link rel='stylesheet' href='floatHW.css' type='text/css' media='all'>
+    <!-- <link rel='stylesheet' href='inline-block.css' type='text/css' media='all'> -->
+    <!-- <link rel='stylesheet' href='display-table.css' type='text/css' media='all'> -->
+  </head>
+  <body>
+    <div class="row"> 
+      <h1 class="brand">Responsive Three Ways</h1>
+      <ul class="topnav">
+          <!-- holding place to handle the toggle -->
+            <li>&nbsp;</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="icon">
+              <!-- hamburger menu, javascript:void(0) == can be said = # also. 
+              There is no return value coming back in javascript
+              -->
+              <a href = "javascript:void(0);" onclick="myFunction()">&#9776;</a>
+              
+            </li>
+        </ul><img class="hero" src="images/bookshelf-twitter.jpg" alt="Row of books">
+    </div>
+
+    <div class="row red">
+      <div class="one box"><h2>Box One</h2><img src="images/demoflower.jpg" alt="whitePetals">
+      <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an </p> -->
+      </div> 
+      <div class="two box"><h2>Box Two</h2><img src="images/demoflower.jpg" alt="whitePetals"></div> 
+      <div class="three box"><h2>Box Three</h2><img src="images/demoflower.jpg" alt="whitePetals"></div> 
+      <div class="four box"><h2>Box Four</h2><img src="images/demoflower.jpg" alt="whitePetals"></div> 
+    </div>
+
+    <div class="row">
+      <h3>For Simple Float</h3>
+        <p>Note the need for a clear because the outer block won't center if it is floated. Test what happens if the outer div, the row isn't floated.</p>
+      <h3>For Display Block</h3>
+        <p>Note the gap on some browsers because of the display:block bug. You can calculate around this because often your boxes have margins or you can simply use a float"left if you aren't planning on shuffling the order for mobile. Remove the comments from box one before moving to the next step.</p>
+      <h3>Display Table and Table Cell</h3>
+        <p>This allows you to shuffle the order of the boxes.</p>
+    </div>
+
+    <div class="cred"><p>&copy;2017 UCSC Extension Responsive Web Design, Teresa Hardy </p>
+    </div>
+    <script>
+        function myFunction() {
+          document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+        }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,254 @@
+Recommended reading:
+INCLUSIVE Design Patterns, Coding Accessibility Into Web Design by Heydon Pickering, Pub Smashing Magazine, 2016
+
+“Gang of Four”
+Four essential elements of a design Pattern
+ - pattern Name, problem, solution, Consequences
+
+off-canvas pattern - slide from side and hides
+
+look at what is in reset in 
+html 100% - 16 pixels - don't use pixel ever
+
+3 favorite debugging tools
+1) validator
+2) console dev tools
+
+HW- try shuffle the tables
+Ethan Marcotte's
+
+- A List Apart https://alistapart.com/
+- event apart https://aneventapart.com/
+
+Ethan it takes three core ingredients:
+• A flexible, grid-based layout
+• Flexible images and media
+• Media queries, a module from CSS3 specification
+
+https://aneventapart.com/event/san-francisco-2017
+
+Converting Grid in Pixels to Percent
+Convert to percent with the same equation target/context = result 900/960 = 0.9375 or 93.75%
+566/900 = 62.89% for left column 331/900 = 36.78%  (approxm 60% 30% columns)
+
+industry standard use 12 grid
+12/80
+14/40
+
+Semantic UI - frame work
+
+Advance topic design Patterns
+
+http://searchpatterns.org/index.php
+
+What is in reset: Heights in some browsers
+
+How to make flid image?
+css img{ max-width: 100% }
+
+img,embed, object, video {
+  max-width: 100%;
+}
+
+.feature {
+  overflow: hidden;
+}
+
+.feature img {
+  display: block;
+  max-width: auto;
+}
+
+hint: use following to image responsive
+img {
+  max-width: 92%;
+  margin: 4%;
+}
+
+img.hero {
+  max-width: 100%;
+  margin: 0;
+}
+
+Richard Rutter’s experiments at
+http://bkaprt.com/rwd2/13/
+
+Fixed imag
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title> | clagnut/sandbox</title>
+<style type="text/css">
+@import url(/css/sandbox.css);
+#img1 {}
+#img2 IMG {width:100%;}
+#img3 IMG {width:100%; max-width:320px;}
+#img8 IMG {max-width:100%;}
+#img4 {overflow:hidden;}
+#img5 {overflow:hidden;}
+#img5 IMG {float:right;}
+#img6 {background:url(/sandbox/imagetests/wideimg.png) no-repeat center; height:171px}
+#img7 {background:url(/images/duranduran.jpg) no-repeat center; height:240px}
+</style>
+
+</head>
+
+<body>
+<h4 id="logo"><a href="/"><img src="/images/clagnut.png" alt="Clagnut" /></a></h4>
+<div id="content">
+<div id="intro">
+<p>See also:</p>
+<ul>
+<li><a href="/sandbox/imagetest2/">Experiments with three images</a></li>
+<li><a href="/sandbox/imagetest3/">Experiments with max-width and images</a></li>
+</ul>
+ 
+<p><strong>Please try <a href="javascript:moveTo(50,5); window.resizeTo(600,screen.availHeight-80)" title="Resize window to 600px wide">shrinking your window</a> with different browsers and observe what happens to the different images.</strong></p>
+
+</div> <!-- /intro -->
+
+<h2>1. A very wide image contained in a paragraph with no styles applied</h2>
+<p id="img1"><img src="/sandbox/imagetests/wideimg.png" alt=""></p>
+<p><em><a href="http://www.1976design.com/blog/">Dunstan</a> kindly lent me this charming image.</em></p>
+<p>Pellentesque in felis quis tortor consectetuer condimentum. Phasellus nibh nibh, interdum sit amet, sagittis nec, cursus sit amet, dolor. Duis scelerisque tortor. Aenean nec turpis. Curabitur nulla mauris, gravida eu, ultrices id, aliquam nec, mauris. </p>
+
+
+
+<h2>2. A very wide image with a width of 100% (no height set)</h2>
+<p id="img2"><img src="/sandbox/imagetests/wideimg.png" alt=""></p>
+<p>Pellentesque in felis quis tortor consectetuer condimentum. Phasellus nibh nibh, interdum sit amet, sagittis nec, cursus sit amet, dolor. Duis scelerisque tortor. Aenean nec turpis. Curabitur nulla mauris, gravida eu, ultrices id, aliquam nec, mauris. </p>
+
+
+
+<h2>3. A medium image with a width of 100% and a max-width equal to the actual image size (no height set)</h2>
+<p id="img3"><img src="/images/duranduran.jpg" alt=""></p>
+<p>Pellentesque in felis quis tortor consectetuer condimentum. Phasellus nibh nibh, interdum sit amet, sagittis nec, cursus sit amet, dolor. Duis scelerisque tortor. Aenean nec turpis. Curabitur nulla mauris, gravida eu, ultrices id, aliquam nec, mauris. </p>
+
+
+
+<h2>8. A medium image with a max-width of 100% (no height set)</h2>
+<p id="img8"><img src="/images/duranduran.jpg" alt=""></p>
+<p>Pellentesque in felis quis tortor consectetuer condimentum. Phasellus nibh nibh, interdum sit amet, sagittis nec, cursus sit amet, dolor. Duis scelerisque tortor. Aenean nec turpis. Curabitur nulla mauris, gravida eu, ultrices id, aliquam nec, mauris. </p>
+
+
+
+<h2>4. A very wide image with overflow:hidden applied to its container</h2>
+<p id="img4"><img src="/sandbox/imagetests/wideimg.png" alt=""></p>
+<p>Pellentesque in felis quis tortor consectetuer condimentum. Phasellus nibh nibh, interdum sit amet, sagittis nec, cursus sit amet, dolor. Duis scelerisque tortor. Aenean nec turpis. Curabitur nulla mauris, gravida eu, ultrices id, aliquam nec, mauris. </p>
+
+
+
+<h2>5. A very wide image floated right with overflow:hidden applied to its container</h2>
+<p id="img5"><img src="/sandbox/imagetests/wideimg.png" alt=""></p>
+<p>Pellentesque in felis quis tortor consectetuer condimentum. Phasellus nibh nibh, interdum sit amet, sagittis nec, cursus sit amet, dolor. Duis scelerisque tortor. Aenean nec turpis. Curabitur nulla mauris, gravida eu, ultrices id, aliquam nec, mauris. </p>
+
+
+
+<h2>6. A very wide image centered as a background with container height set to image height</h2>
+<p id="img6"></p>
+<p>Pellentesque in felis quis tortor consectetuer condimentum. Phasellus nibh nibh, interdum sit amet, sagittis nec, cursus sit amet, dolor. Duis scelerisque tortor. Aenean nec turpis. Curabitur nulla mauris, gravida eu, ultrices id, aliquam nec, mauris. </p>
+
+
+
+<h2>7. As (6) with a medium image</h2>
+<p id="img7"></p>
+<p>Pellentesque in felis quis tortor consectetuer condimentum. Phasellus nibh nibh, interdum sit amet, sagittis nec, cursus sit amet, dolor. Duis scelerisque tortor. Aenean nec turpis. Curabitur nulla mauris, gravida eu, ultrices id, aliquam nec, mauris. </p>
+
+
+
+</div> <!-- /content -->
+
+</body>
+</html>
+
+Font Awesome (special fonts) or Halflings (Bootstrap components) should be used SVG.
+https://getbootstrap.com/docs/3.3/components/
+http://fontawesome.io/examples/
+
+If you want change margin, do it under <div p> level.
+
+-play around with Table Flexibility:
+Shuffle the order
+
+@media (max-width: 480px) {
+  .box {
+    display: block;
+    width: 100%;
+    min-height: 8em;
+    line-height: 8em;
+  }
+  .three {
+    display: table-caption;
+  }
+  .four {
+    display: table-header-group;
+  }
+  .one {
+    display: table-footer-group;
+  }
+
+}
+
+display-tableFlexibility.css under week1
+
+## ftp Access for hw
+cyberduck
+ftp
+
+server: tmhardy.com 
+URD: ftp://rwd2017fa@tmhardy.com@tmhardy.com
+username: rwd2017fa@tmhardy.com
+Password is Monday09-18-17
+
+big image size 700 x 300
+
+break point?
+
+media query: css command that browser query what it is
+
+
+http://viewportsizes.com/
+
+1280 
+1450
+
+Media query Developer tools
+Spoofing the query parameters: spoofing the kind of device
+
+
+http://typecast.com/blog/a-more-modern-scale-for-web-typography
+
+READ this and come back with questions
+How is Bootstrap doing CSS for typography?  READ Bootstrap CSS
+
+Robert Brginghurst's book - have the fall back
+When using a special font- if the font
+
+FLOUT (Flash of Unstyled Text) or FOIT (Flash of Invisible Text)
+
+- google font for heading
+- h1, h2, h3
+know what is residents on 
+https://www.fontsquirrel.com/
+
+## list of imporatance:
+
+- Material design: CSS build for marterial design
+- SemanticUI:
+
+- resource: skeleton htm
+https://html5bones.com/
+http://www.initializr.com/
+
+HW week2) 
+- images YOurs/credited, keep images same sizes
+- 2 media queries
+- Responsive Menu
+- fix fonts
+- 
+
+- READ ahead for next class.
+
+slider min 1440 width, 500 px
+
+HTML5 image source set
