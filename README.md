@@ -1,2 +1,3 @@
-# UCSC-Responsive-Web-Design-with-Open-Source-Frameworks-2.0
-ucsc ext responsive web design
+# UCSC-Responsive-Web-Design-with-Open-Source-Frameworks
+
+- DEMO http://tmhardy.com/dev/ucsc/rwd2017fa/heggy/week2/index.html
