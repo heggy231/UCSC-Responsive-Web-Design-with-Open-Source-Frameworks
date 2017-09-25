@@ -61,6 +61,7 @@ p {
 }
 .cred p {
   padding: 1em;
+  text-align: center;
 }
 a {
   /* #000 black */
