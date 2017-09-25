@@ -252,3 +252,68 @@ HW week2)
 slider min 1440 width, 500 px
 
 HTML5 image source set
+
+file> export> jpg for webExprt Image as jpeg Quality 80 ok
+Note under adv option: "Use quality settings from orig img
+     if img was .jpg before opening in gimp > this setting 
+     may give you the best result
+
+png: used for graphics that contain areas of solid color like 
+logos, icons, buttons and screen shots that don't work as 
+well as jpegs. png support transparency (jpeg does not)
+
+- unlike jpg, png you can use max compression since it doesn't 
+effect the quality at all.
+
+- crop img: shift + c
+- while position cursor inside the area of my cropping, 
+   Nudge: crop by pressing arrow keys (small movement)
+   Large Nudge: shift arrow
+- Fixed: Aspect ratio: 2: 1 (width Height)
+or Size: number of pixels  ex) crop 1024 x 768 pixel in landscape
+orientation
+
+OR crop out in print size:
+Go to Size and select inches: 6 inch 4 inch
+
+once it is all good to go for cropping > click the inside img area
+- crop done
+
+OR 
+from crop tool > image tool bar > crop to selection
+
+minimun 1440 x 500 px
+
+images credit https://github.com/stevenwanderski/bxslider-4
+Steven Wanderski
+export 80 quality (set use qulity setting from orig. img)
+
+flower dimension: 350x323
+
+pinktree.jpg
+image credit Sunrays by Rob Janssen
+https://www.pinterest.com/pin/39969515419890501/
+
+img water.jpg
+https://www.pinterest.com/pin/368661919480062895/
+
+
+mountain.img
+image credit Peach Blossom Colony series (2011) by Yang Yongliang
+ https://quod.lib.umich.edu/t/tapic/x-7977573.0005.202-00000008/1?subview=detail;view=entry
+
+
+butterfly.img
+http://fullhdwall.com/wallpaper-of-nature.html/cool-nature
+
+
+maudie search result
+https://www.google.com/search?rlz=1C5CHFA_enUS714US716&biw=1594&bih=892&tbm=isch&sa=1&q=maudie+400+x+400+cows&oq=maudie+400+x+400+cows&gs_l=psy-ab.3...49535.51101.0.51245.7.6.1.0.0.0.90.421.6.6.0....0...1.1.64.psy-ab..0.0.0....0.GF-U8zlj8qY#imgdii=bKLP28ER4puB8M:&imgrc=ihrKOlWHxY_RKM:
+
+credit:
+https://shop.artgalleryofnovascotia.ca/products/maud-lewis-matted-print
+
+maudie paint http://sonyclassics.com/maudie/
+
+info about her
+https://www.facebook.com/MaudieTheMovie/photos/a.661796387177694.1073741825.346958805328122/1088040257886636/?type=3&theater
