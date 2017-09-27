@@ -317,3 +317,25 @@ maudie paint http://sonyclassics.com/maudie/
 
 info about her
 https://www.facebook.com/MaudieTheMovie/photos/a.661796387177694.1073741825.346958805328122/1088040257886636/?type=3&theater
+
+## Week 3 ##
+- 72 dpi
+optimize the images
+jpeg
+try png8 jpeg 
+faces png 
+others jpeg
+
+Fix
+- title wraps (give more width)
+- background color 
+
+h2{ 
+  letter-spacing: 0.08em;  // https://developer.mozilla.org/en-US/docs/Web/CSS/font-kerning
+}
+
+bootstrp max-width: 100%
+all pictures set max-width 100% (for fit to the screen for all the pictures)
+
+
+- People love fontAwesome - instead of halflings
