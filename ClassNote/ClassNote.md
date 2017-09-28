@@ -339,3 +339,11 @@ all pictures set max-width 100% (for fit to the screen for all the pictures)
 
 
 - People love fontAwesome - instead of halflings
+
+center block -- 
+
+put social icons: in the footer
+
+HW: 
+1) responsive bootstrap add nav bar
+2) Social link on the footer (use font awesome)
