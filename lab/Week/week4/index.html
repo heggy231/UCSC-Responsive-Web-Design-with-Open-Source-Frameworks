@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags. -->
+    <link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
     <title>Dedicated to Maud Lewis</title>
     <!-- CSS reset -->
     <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" type='text/css' media='all' >
@@ -53,33 +54,33 @@
       </div><!--row-->
 
       <div class="row">
-            <div class="jumbotron hero" alt="plant hero image">
+            <div id="hero" class="jumbotron" alt="Maudie hero image">
               <h1 class= "toptext"> All about Maudie</h1>
               <img src="images/maudieHero1.jpg" class="img-responsive" alt="Maudie with red hat, smiles with painting">
             </div><!--jumbotron-->
       </div><!--row-->
       <div class="row red">
         <div class="col-md-3 col-sm-6 col-xs-12"> <!--col-md-3 box1-->
-          <h2>Journey</h2>
+          <h2 class="text-center">Journey</h2>
           <img src="images/cat.jpg" class="fourup" alt="three adorable yellow eyed cats">
           <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an </p> -->
         </div><!--End col-md-3 box1--> 
         
         <div class="col-md-3 col-sm-6 col-xs-12">
-          <h2>Passion</h2><img src="images/cowTwin.jpg" alt="Glamorous cow with long eyelashes">
+          <h2 class="text-center">Passion</h2><img src="images/cowTwin.jpg" alt="Glamorous cow with long eyelashes">
         </div><!--End col-md-3 box2-->
 
         <div class="col-md-3 col-sm-6 col-xs-12">
-          <h2>Fun Facts</h2><img src="images/modelT.jpg" alt="Fashionable couple in classic car">
+          <h2 class="text-center">Fun Facts</h2><img src="images/modelT.jpg" alt="Fashionable couple in classic car">
         </div><!--End col-md-3 box3-->
         
         <div class="col-md-3 col-sm-6 col-xs-12">
-          <h2>Home Life</h2><img src="images/sandyCove.jpg" alt="Sweet home with ocean and seagulls"></div> 
+          <h2 class="text-center">Home Life</h2><img src="images/sandyCove.jpg" alt="Sweet home with ocean and seagulls"></div> 
         </div><!--End col-md-3 box4-->
       </div><!--row-->
 
-      <div class="row">
-        <div class="col-md-12">
+      <div class="row cushion">
+        <div class="col-md-12 center">
             <h3>Here's a time line of Mrs. Lewis's life</h3>
             <ul><strong>1903</strong> - Born in rural Yarmouth Maud Dowley. </ul> 
             <ul><strong>1913</strong> - Drop out of school to get away from her school mates' constant mockery due to her juvenile rheumatoid arthritis disability.</ul>
@@ -92,8 +93,8 @@
         </div><!--col-md-12-->
       </div><!--row-->
 
-    <div class="row">
-      <div class="col-xs-12 col-sm-3">
+    <div class="row cushion">
+      <div class="col-xs-12 col-sm-3 center">
         <h2>Reservations</h2>
         <form id="eventForm" role="form" action="" method="POST">
           <div class="form-group">
@@ -142,9 +143,11 @@
               </li>
           </ul>
       </div> <!-- social col-md-12-->
+		</div><!--row for social and my footer-->
+	</div><!--container-fluid from the top of bootstrap-->
 
       <!-- myFooter copyrights -->
-      <div class="col-md-6 col-sm-6"> 
+      <footer class="footer"> 
         <p>Copyright &copy; Heggy Castaneda, 
             Resource: 
               <a href="https://timeline.com/maud-lewis-canadian-painter-79da8eabe9df"> Timeline </a> Biography 
@@ -152,9 +155,8 @@
               <a href="http://sonyclassics.com/maudie/"> Mudie</a> movie scenes by sonyclassics
               <a href="http://www.edu.pe.ca/threeoaks/art/601/lewis.htm"> Candian Database</a>
         </p>
-      </div> <!-- end myFooter copyrights -->
-		</div><!--row for social and my footer-->
-	</div><!--container-fluid from the top of bootstrap-->
+      </footer> <!-- end myFooter copyrights -->
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

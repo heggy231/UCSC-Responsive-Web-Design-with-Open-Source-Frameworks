@@ -1,101 +1,43 @@
-html {font-size: 100%;}
-.row {
-  width:93.75%;
-  margin: 0 auto;
-  background: #fafafa;
-}
-.box {
-  /* float element to left
-     http://learn.shayhowe.com/html-css/positioning-content/
-   */
-  float: left;
-  width: 25%;
-  margin: 0;
-  padding: 0;
-  color: #fff;
-}
-.one {
-  /* #efefef light grey, #333 charcoal */
-  background: #efefef;
-  color: #333;
-}
-.two {
-  /* #afafaf dark grey */
-  background: #afafaf;
-  color: #333;
-}
-.three {
-  background: #8a8a8a;
-}
-.four {
-  background: #545454;
-}
-h1 {
-  font-size: 180%;
-  font-weight: bold;
-  line-height: 1.8em;
-}
-h2 {
-  font-size: 120%;
-  font-weight: bold;
-  line-height: 5em;
-  text-align: center;
-}
-h3 {
-  font-size: 110%;
-  font-weight: bold;
-  line-height: 1.8em;
-}
-p {
-  padding: 10px;
-  line-height: 1.4em;
-  text-align: left;
-}
-.cred {
-  width: 100%;
-  margin: 0;
-  background: #AAA;
-  float: left;
-  /* padding: 1em; */
-}
-.cred p {
-  padding: 1em;
-}
-a {
-  /* #000 black */
-  color: #000;
-}
-.row:after {
-  /* important replaces extra markup */
-  visibility: hidden;
-  display: block;
-  content: "";
-  clear: both;
-  height: 0;
-}
-* html .row { zoom: 1; } /* IE6 */
-* :first-child + html .row { zoom: 1;} /* IE7 */
-/* 768px */
+/* .jumbotron hero {
+  background-image: url("images/maudieHero1.png");
+	background-size:cover;
+	background-position: top;
+} */
 
-@media only screen and (max-width: 48em) {
-  .row {
-    width: 100%;
-  }
-  .box {
-    width: 90%;
-    float: none;
-    margin: 0 auto;
-  }
-  h1, h2, p {
-    margin-left: 5%;
-    width: 90%;
-  }
+div.jumbotron {
+  padding-top: 0px;
 }
-
-.hero {
+#hero {
+  margin-right: -16px !important;
+  margin-left: -15px !important;
   padding-right: 0px !important;
   padding-left: 0px !important;
-  padding-top: 0px !important;
+}
+
+div.row.cushion {
+  padding-left: 20px;
+}
+
+/* wraps text using width 30%, moves text to middle using margin-left */
+div.col-md-12.center {
+  margin-left: 30%;
+  width: 30%;
+}
+
+div.col-xs-12.col-sm-3.center {
+  margin-left: 30%;
+  width: 30%;
+}
+
+.navbar-brand.brand {
+	color: #8d8d89;
+	font-size: 1.7em;
+	padding-left: 0em;
+	padding-top: 1em;
+}
+
+.navbar-brand.icon {
+	height:4.4em;
 }
 
 h1 {
@@ -105,5 +47,38 @@ h1 {
 }
 
 .social {
-  
+  margin: 0;
+  padding: 0;
+}
+
+.social ul {
+  margin: 1em 1em; 
+  padding: 5px;
+}
+
+.social ul li {
+  display: inline-block !important;
+  list-style: outside none none !important;
+  margin: 5px !important;
+}
+
+.social i{
+	background-color: #e2e51b;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 22px;
+	height: 40px;
+	padding-top: 12px;
+	text-align: center;
+	transition: all 0.3s ease 0s;
+	width: 40px
+}
+
+.social i:hover {
+  background: #a0cef7;
+}
+
+body {
+  position: relative;
+  padding-top: 80px;
 }
