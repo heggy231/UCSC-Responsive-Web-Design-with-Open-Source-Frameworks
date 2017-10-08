@@ -1,0 +1,88 @@
+/* objective: Display: inline-block
+  - no clearing
+  - Beware of bug
+  - Beware of vertical alignment
+ */
+
+html {font-size: 100%;}
+.row {
+  width:93.75%;
+  margin: 0 auto;
+  background: #fafafa;
+}
+.box {
+  /* float element to left
+     http://learn.shayhowe.com/html-css/positioning-content/
+   */
+  /* float: left; */
+  display: inline-block;
+  width: 24%; /* note: wiggle room for the bug, under float it used to be 25% */
+  margin: 0;
+  padding: 0;
+  min-height: 15em; /* beware of using height */
+  vertical-align: top; /* default is bottoms aligned */
+  color: #fff;
+}
+.one {
+  /* #efefef light grey, #333 charcoal */
+  background: #efefef;
+  color: #333;
+}
+.two {
+  /* #afafaf dark grey */
+  background: #afafaf;
+  color: #333;
+}
+.three {
+  background: #8a8a8a;
+}
+.four {
+  background: #545454;
+}
+h1 {
+  font-size: 180%;
+  font-weight: bold;
+  line-height: 1.8em;
+}
+h2 {
+  font-size: 120%;
+  font-weight: bold;
+  line-height: 5em;
+  text-align: center;
+}
+h3 {
+  font-size: 110%;
+  font-weight: bold;
+  line-height: 1.8em;
+}
+p {
+  padding: 10px;
+  line-height: 1.4em;
+  text-align: left;
+}
+.cred { 
+  width: 100%; 
+  margin: 0; 
+  background: #AAA;
+}
+.cred p {
+  padding: 1em;
+}
+a {
+  /* #000 black */
+  color: #000;
+}
+/* 768px */
+@media only screen and (max-width: 48em) {
+  .row {
+    width: 100%;
+  }
+  .box {
+    display: block;
+    width: 100%;
+  }
+  h1, h2, p {
+    margin-left: 5%;
+    width: 90%;
+  }
+}

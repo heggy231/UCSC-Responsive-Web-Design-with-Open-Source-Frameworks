@@ -6,14 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags. -->
+    <link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
     <title>Dedicated to Maud Lewis</title>
     <!-- CSS reset -->
-    <link rel='stylesheet' href='../CSSReset/eric-meyer-reset.min.css' type='text/css' media='all' >
+    <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" type='text/css' media='all' >
     <!-- Bootstrap -->
-    <link rel='stylesheet' href='../../bootstrap-3.3.7-dist/css/bootstrap.min.css' rel="stylesheet">
-    <!-- add font awesome -->
-    <!-- my stylesheet -->
-    <link rel='stylesheet' href='floatHW.css' type='text/css' media='all'>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Heggy stylesheet -->
+    <link rel='stylesheet' href='myStyle.css' type='text/css' media='all'>
 
     <!-- HTML5 shim and Repond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,86 +25,142 @@
     <![endif]-->
   </head>
   <body>
-  <nav class="navbar navbar-default">
     <div class="container-fluid"> 
       <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html">
-          <h1>Maud Lewis Tribute Page</h1>
-        </a>
-      </div>
+    	<div class="row">
+          <nav class="navbar navbar-default">
+        <!-- Brand and toggle get grouped for better mobile display -->
+             <!-- Static navbar -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              </button>
+              
+              <img src="images/maudieIcon.jpg" class="navbar-brand icon" alt="icon">
+              <a class="navbar-brand brand" href="index.html"> Maudie's Life</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                <li><a href="menu">Menu</a></li>		
+                <li><a href="menu">About</a></li>	
+                <li><a href="menu">Contact</a></li>	
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </nav>			
+      </div><!--row-->
 
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div> <!-- /.navbar-collapse -->
-    </div> <!-- /.container-fluid -->
-  </nav>
-
-    
-
-
-    <div class="container-fluid">
       <div class="row">
-        <img src="images/maudiePaintStandSlider1.jpg" class="img-responsive" alt="Artist Maudie smiles with her painting">
-      </div>
-    </div>
+            <div id="hero" class="jumbotron" alt="Maudie hero image">
+              <h1 class= "toptext"> All about Maudie</h1>
+              <img src="images/maudieHero1.jpg" class="img-responsive" alt="Maudie with red hat, smiles with painting">
+            </div><!--jumbotron-->
+      </div><!--row-->
+      <div class="row red">
+        <div class="col-md-3 col-sm-6 col-xs-12"> <!--col-md-3 box1-->
+          <h2>Journey</h2>
+          <img src="images/cat.jpg" class="fourup" alt="three adorable yellow eyed cats">
+          <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an </p> -->
+        </div><!--End col-md-3 box1--> 
+        
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <h2>Passion</h2><img src="images/cowTwin.jpg" alt="Glamorous cow with long eyelashes">
+        </div><!--End col-md-3 box2-->
 
-     <!-- Static navbar -->
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <h2>Fun Facts</h2><img src="images/modelT.jpg" alt="Fashionable couple in classic car">
+        </div><!--End col-md-3 box3-->
+        
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <h2>Home Life</h2><img src="images/sandyCove.jpg" alt="Sweet home with ocean and seagulls"></div> 
+        </div><!--End col-md-3 box4-->
+      </div><!--row-->
 
+      <div class="row cushion">
+        <div class="col-md-12 center">
+            <h3>Here's a time line of Mrs. Lewis's life</h3>
+            <ul><strong>1903</strong> - Born in rural Yarmouth Maud Dowley. </ul> 
+            <ul><strong>1913</strong> - Drop out of school to get away from her school mates' constant mockery due to her juvenile rheumatoid arthritis disability.</ul>
+            <ul><strong>1937</strong> - Persuded Mr. Everett Lewis, an itinerant fish peddler, to hire her as a lived-in maid despite her disability. </ul>
+            <ul><strong>1938</strong> - Married to Mr. Everett Lewis </ul>
+            <ul><strong>1939</strong> - Sells her first painting while working as a night watchman at the "Poor Farm." </ul>
+            <ul><strong>1965</strong> - Maud is featured on CBC-TV broadcast and in numerous newspaper stories which brought her world wide publicity. </ul>  
+            <ul><strong>1968</strong> - Maud's health deteriorates after her hip fractue from a fall. </ul>  
+            <ul><strong>1970</strong> - Maud passes away on July 30th. </ul>
+        </div><!--col-md-12-->
+      </div><!--row-->
 
+    <div class="row cushion">
+      <div class="col-xs-12 col-sm-3 center">
+        <h2>Reservations</h2>
+        <form id="eventForm" role="form" action="" method="POST">
+          <div class="form-group">
+            <label for="firstName"> First Name </label>
+            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name">
+          </div><!--form-group-->
+          <div class="form-group">
+            <label for="email1">Email address</label>
+            <input type="email" class="form-control" id="email1" placeholder="Email">
+          </div><!--form-group-->
+          <div class="form-group">
+            <label for="datePicker">Date</label>
+              <div class="input-group input-append date" id="datePicker">
+              <input type="text" class="form=control" name="date">
+              <!-- span class="input-group-addon add-on"><span class=glyphicon glyphicon-calendar"></span></span-->
+              </div><!--input-group-->
+          </div><!--form-group-->	
+          <div class="checkbox">
+            <label><input type="checkbox"> I would like to hear about special events. </label>
+          </div><!--checkbox-->
+          <div class="form-group">
+            <button type="submit" class="btn btn-default">Submit</button>
+          </div><!--form-group-->
+        </form>
+      </div><!--col -xs-12 col-sm-3-->
+    </div><!--row for form-->
 
-
-    <div class
-    <div class="row red">
-      <div class="one box"><h2>Journey</h2><img src="images/cat.jpg" class="fourup" alt="three adorable yellow eyed cats">
-      <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an </p> -->
-      </div> 
-      <div class="box two"><h2>Her Passion</h2><img src="images/cowTwin.jpg" alt="Glamorous cow with long eyelashes"></div> 
-      <div class="box three"><h2>Fun Facts</h2><img src="images/modelT.jpg" alt="Fashionable couple in classic car"></div> 
-      <div class="box four"><h2>Home Life</h2><img src="images/sandyCove.jpg" alt="Sweet home with ocean and seagulls"></div> 
-    </div>
 
     <div class="row">
-      <h3>Here's a time line of Mrs. Lewis's life</h3>
-        <ul><strong>1903</strong> - Born in rural Yarmouth Maud Dowley. </ul> 
-        <ul><strong>1913</strong> - Drop out of school to get away from her school mates' constant mockery due to her juvenile rheumatoid arthritis disability.</ul>
-        <ul><strong>1937</strong> - Persuded Mr. Everett Lewis, an itinerant fish peddler, to hire her as a lived-in maid despite her disability. </ul>
-        <ul><strong>1938</strong> - Married to Mr. Everett Lewis </ul>
-        <ul><strong>1939</strong> - Sells her first painting while working as a night watchman at the "Poor Farm." </ul>
-        <ul><strong>1965</strong> - Maud is featured on CBC-TV broadcast and in numerous newspaper stories which brought her world wide publicity. </ul>  
-        <ul><strong>1968</strong> - Maud's health deteriorates after her hip fractue from a fall. </ul>  
-        <ul><strong>1970</strong> - Maud passes away on July 30th. </ul>
+      <div class="social col-md-12 col-sm-12">
+          <ul>
+              <li>
+                <a target="blank" href="https://www.facebook.com/MaudieTheMovie/">
+                <i class="fa fa-lg fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.linkedin.com/pulse/aisling-walsh-frames-cinematic-picture-maudie-trevor-hogg/">
+                <i class="fa fa-lg fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://plus.google.com/+BlackSheepGalleryHeadofJeddore">
+                <i class="fa fa-lg fa-google-plus"></i>
+                </a>
+              </li>
+          </ul>
+      </div> <!-- social col-md-12-->
 
-    </div>
+      <!-- myFooter copyrights -->
+      <div class="col-md-6 col-sm-6"> 
+        <p>Copyright &copy; Heggy Castaneda, 
+            Resource: 
+              <a href="https://timeline.com/maud-lewis-canadian-painter-79da8eabe9df"> Timeline </a> Biography 
+              <a href="https://shop.artgalleryofnovascotia.ca/products/maud-lewis-matted-print"> Art Gallery of Nova Scotia</a> for artist Lewis' painting images, 
+              <a href="http://sonyclassics.com/maudie/"> Mudie</a> movie scenes by sonyclassics
+              <a href="http://www.edu.pe.ca/threeoaks/art/601/lewis.htm"> Candian Database</a>
+        </p>
+      </div> <!-- end myFooter copyrights -->
+		</div><!--row for social and my footer-->
+	</div><!--container-fluid from the top of bootstrap-->
 
-    <div class="cred">
-      <p>Copyright &copy; Heggy Castaneda, 
-      Resource: 
-        <a href="https://timeline.com/maud-lewis-canadian-painter-79da8eabe9df"> Timeline </a> Biography 
-        <a href="https://shop.artgalleryofnovascotia.ca/products/maud-lewis-matted-print"> Art Gallery of Nova Scotia</a> for artist Lewis' painting images, 
-        <a href="http://sonyclassics.com/maudie/"> Mudie</a> movie scenes by sonyclassics
-        <a href="http://www.edu.pe.ca/threeoaks/art/601/lewis.htm"> Candian Database</a>
-      </p>
-
-    </div>
-
-        <!-- jQuery (necessary for Boostrap's JavaScript plugins) -->
-        <script>
-          src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"
-        </script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 
   </body>
 </html>

@@ -347,3 +347,44 @@ put social icons: in the footer
 HW: 
 1) responsive bootstrap add nav bar
 2) Social link on the footer (use font awesome)
+
+
+-- Week 4 
+review_ heggy needs to update her file
+
+Walker Evans / Biography & Images - Atget Photography.com / Videos Books & Quotes
+
+http://getbootstrap.com/docs/4.0/components/forms/
+sr = screen reader
+
+https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-forms.php
+great resource to learn about bootstrap - try this code style
+
+http://ui-patterns.com/blog/11-tips-to-increase-form-conversion
+
+http://ui-patterns.com/patterns/InputFeedback
+
+Form:
+Date Picker
+http://formvalidation.io/examples/bootstrap-datepicker/
+
+- grid system
+
+https://getbootstrap.com/docs/3.3/css/#grid
+
+https://getbootstrap.com/docs/3.3/css/#grid-offsetting
+
+push and pull
+
+- Nesting columns
+https://getbootstrap.com/docs/3.3/css/#grid-nesting
+
+- Column ordering
+https://getbootstrap.com/docs/3.3/css/#grid-column-ordering
+  * try test of push-3 push-9
+  * when I get to small, I want to swap left and right
+
+  * CSS zen garden
+  http://www.csszengarden.com/
+
+- class push pull example slide 59  IN lecture notes week3
