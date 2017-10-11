@@ -1,0 +1,126 @@
+/*
+OSDP customization layered on top of Bootstrap 3.6 
+TMHardy Fall 2017
+*/
+.navbar-brand { font-size: 270%; letter-spacing: .03em; line-height: .8em; color: #800 !important; }
+.navbar { margin-bottom: 0; }
+
+.navbar-default .navbar-nav > li > a { 
+	color: #800; 
+	font-size: 160%; 
+	line-height: 1.3em; 
+	}
+.margin-top { 
+	margin-top: 10px; 
+	}
+p { 
+	letter-spacing: .08em; 
+	}
+h1,h2,h3,h4,h5,a  {
+	font-family: 'Merienda One', cursive;
+	color: #800;
+	}
+h2 {  
+	font-size: 200%; 
+	font-weight: normal;  
+	letter-spacing: .03em;
+	}
+.jumbotron { 
+	background: #000 url("../images/hero2.jpg"); width: 100%; height: 100%; 
+	background-size: cover; 
+	overflow: hidden; 
+	}
+.jumbotron p { 
+	color: #DDD;  
+	text-shadow: 2px 1px 1px  #000; 
+	}
+.jumbotron p a {
+	text-shadow: none;
+	}
+.jumbotron h1 { color: #800; }
+
+footer { 
+	background-color: #e7e7e7; }
+
+@media (max-width: 979px) {
+  .navbar-brand { font-size: 250%; }
+  /*p {width: 500px; margin: auto;}*/
+  .navbar-default .navbar-nav > li > a {
+	font-size: 120%;
+	}
+  } 
+/* Dropdown on hover fix */
+li.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+	
+/* for the scrollspy 
+#section1, #section2, #section3, #section41, #section42  {
+    margin-left: 100px;
+    }*/
+	
+/* for social icons with font awesome */
+* {
+    box-sizing: border-box;
+   } 	
+.social { margin: 0; padding: 0; }
+.social ul { margin: 5em 2em; padding: 5px; }
+.social ul li { 
+	display: inline-block;
+	list-style: outside none none;
+	margin: 5px;
+	}
+.social i {
+	background-color: #555;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 22px;
+	height: 40px;
+	padding-top: 12px;
+	text-align: center;
+	transition: all 0.3s ease 0s;
+	width: 40px;
+	}
+	
+.social i:hover { color: #600; }
+	
+/* for the scrollspy */
+body { position: relative; }
+ul.nav-pills {
+    top: 80px;
+    position: fixed;
+    }
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+    background-color: #800;
+    color: #fff;
+}
+.box-shadow {
+      -moz-box-shadow: 3px 3px 4px #eee;
+	  -webkit-box-shadow: 3px 3px 4px #eee;
+	  box-shadow: 3px 3px 4px #eee;
+	  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#eee')";
+	  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#eee');
+	  border: 1px solid #ccc;
+	  -webkit-border-radius: 6px;
+	  -moz-border-radius: 6px;
+	  border-radius: 6px; 
+	  margin-bottom: 10px;
+  }
+.box-shadow img { width: 90%; display: block; margin: 0 auto; }
+.box-shadow p {
+  /*accommodates my images*/
+    max-width: 500px;
+    margin: 2em auto;
+    padding: 0 5px 0 5px;
+    }  
+.extra-top {
+	margin-top: 10px;
+	}
+@media (max-width: 979px) {
+	#myScrollspy { display: none; }
+	}
+/* beware map needs a height or it doesn't work */
+#map {
+	margin: 2em 0 2em 0;
+	min-height: 400px;
+    }

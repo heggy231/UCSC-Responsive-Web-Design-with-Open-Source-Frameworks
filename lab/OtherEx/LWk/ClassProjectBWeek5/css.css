@@ -1,0 +1,131 @@
+* {
+	box-sizing: border-box;
+}
+.social {margin: 0; padding: 0;}
+.social ul {margin: 1em 1em; padding: 5px;}
+.social ul li {
+	display: inline-block;
+	list-style: outside none none;
+	margin: 5px;
+}
+.social i{
+	background-color: #555;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 22px;
+	height: 40px;
+	padding-top: 12px;
+	text-align: center;
+	transition: all 0.3s ease 0s;
+	width: 40px
+}
+.social i:hover {color: #600;}
+
+#lucinda {
+	background-image: url("plantgirl.png");
+	background-size:cover;
+	background-position: top;
+}
+
+.navbar-default {
+	border-color: #fff;
+	background-color: #fff;
+}
+
+button.navbar-toggle.collapsed {
+	border-color: #fff;
+}
+
+ul.nav.navbar-nav.navbar-right{
+	padding-top: 0.4em;
+}
+
+.navbar-brand.brand {
+	font-size: 2em;
+	padding-left: 0em;
+	padding-top: 0.7em;
+}
+
+.navbar-brand.icon {
+	height:3.4em;
+}
+
+li {
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+}
+
+h1 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+h2 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+h2.kerned {
+	letter-spacing:0.1em;
+}
+
+h3 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+a {
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+label {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+.jumbotron {
+	height: 35em;
+}
+
+h1.toptext {
+	text-align: right;
+	padding-right: 0.5em;
+	padding-top: 3em;
+}
+
+img.inline{
+	padding-bottom:1em;
+}
+
+span.input-group-addon.add-on{
+	display: inline-block;
+}
+
+span.glyphicon.glyphicon-calendar {
+	display: inline-block;
+	margin:auto ;
+}
+
+.input-group-addon {
+	width:20%;
+	border: none;
+}
+
+.padding-top {
+	padding-top: 5em;
+}
+
+ul.col-md-3.nav-pills {
+	top: 5em;
+	position: fixed;
+}
+
+ul.col-md-pull-8 {
+	position:relative;
+	padding-top:0;
+}

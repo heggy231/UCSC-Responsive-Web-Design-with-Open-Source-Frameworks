@@ -1,0 +1,207 @@
+<!-- http://tmhardy.com/dev/ucsc/rwd2017fa/teresa/ProjectB/altforms.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Bootstrap &amp; Components Forms</title>
+<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
+<!-- Social icons my way -->
+	<link href="css/font-awesome.css" rel="stylesheet" media="all">
+</head>
+<body>
+<nav class="navbar navbar-default">
+	<div class="container">
+<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#">Dinner in Kobe</a> 
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+				<li><a href="food-scrollspy.html">Food</a></li>
+				<li><a href="components.html">About</a></li>
+				<li class="active"><a href="forms.html">Contact</a></li>
+			</ul>
+		</div>
+<!-- /.navbar-collapse -->
+	</div>
+<!-- /.container-->
+</nav>
+<div class="jumbotron">
+	<div class="container">
+		<h1>
+			Yoshi
+		</h1>
+		<p>
+			Enjoy a five course meal at the bar with our chef.
+		</p>
+		<p>
+			<a class="btn btn-default btn-lg" href="#" role="button">Book Now</a>
+		</p>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-sm-3">
+			<h2>Alternate Reservations</h2>
+			<form id="eventForm" role="form" action="" method="POST">
+				<div class="form-group">
+					<label for="firstName">First Name</label> 
+					<input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name">
+				</div>
+				<div class="form-group">
+					<label for="email1">Email address</label> 
+					<input type="email" class="form-control" id="email1" placeholder="Email">
+				</div>
+				<div class="form-group">
+<!-- Date input -->
+					<label class="control-label" for="date">Date</label> 
+					<input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text" />
+				</div>
+				<div class="checkbox">
+					<label>
+					<input type="checkbox">
+					I would like to hear about special events.</label> 
+				</div>
+				<div class="form-group">
+<!-- Submit button -->
+					<button class="btn btn-primary " name="submit" type="submit">Submit</button> 
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-sm-9">
+			<h2>
+				Formatting Considerations
+			</h2>
+			<p>
+				Using form-inline class needs a little extra formatting to space the label and input
+			</p>
+			<form class="form-inline" id="eventForm" role="form" action="" method="POST">
+				<div class="form-group">
+					<label for="firstName">User Name</label> 
+					<input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name">
+				</div>
+				<div class="form-group">
+					<label for="email1">Password</label> 
+					<input type="email" class="form-control" id="email1" placeholder="Email">
+				</div>
+				<div class="form-group">
+					<button type="submit" class="btn btn-default">Submit</button> 
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-6">
+			<h2>
+				I like this one better
+			</h2>
+			<p>
+				Option three would be to add column divs to the form elements to control the spacing without adding extra css. 
+			</p>
+			<form class="form-inline">
+				<div class="form-group">
+					<label class="sr-only" for="exampleInputEmail3">Email address</label> 
+					<input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+				</div>
+				<div class="form-group">
+					<label class="sr-only" for="exampleInputPassword3">Password</label> 
+					<input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+				</div>
+				<div class="checkbox">
+					<label> 
+					<input type="checkbox">
+					Remember me </label> 
+				</div>
+				<button type="submit" class="btn btn-default">Sign in</button> 
+			</form>
+		</div>
+	</div>
+	<br>
+	<br>
+</div>
+<footer class="footer">
+	<div class="container">
+		<div class="col-md-3">
+			<h3>
+				Yoshi's Restaurant
+			</h3>
+			<p>
+				Address goes here
+			</p>
+			<p>
+				Phone goes here
+			</p>
+			<p>
+				Hours: etc
+			</p>
+			<p>
+				<span class="glyphicon glyphicon-star" aria-hidden="true"></span>Bootstrap Demonstration <br>
+				&copy; 2016 TMHardy <br>
+				All images are owned by me.
+			</p>
+		</div>
+		<div class="col-md-6">
+			<div id="map" class="col-md-12">
+			</div>
+		</div>
+		<div class="social col-md-3">
+			<ul>
+				<li> <a target="_blank" href="https://www.facebook.com/Premier-Commerical-Cleaning-Solutions-Inc-310962123416/"> <i class="fa fa-lg fa-facebook"></i> </a> </li>
+				<li> <a target="_blank" href="https://www.linkedin.com/company/290027"> <i class="fa fa-lg fa-linkedin"></i> </a> </li>
+				<li> <a target="_blank" href="https://plus.google.com/115146114726257608656/about"> <i class="fa fa-lg fa-google-plus"></i> </a> </li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+</script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js">
+</script>
+<!-- mapping script -->
+<script src="js/googlemap.js">
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4mWGefkw-ISqKU-2Ty_zgQFKYHQ6ttUU&amp;callback=initialize" async defer>
+</script>
+<!-- Bootstrap Date-Picker Plugin -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js">
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css">
+<script>
+	$(document).ready(function(){
+	  var date_input=$('input[name="date"]'); //our date input has the name "date"
+	  var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+	  var options={
+	    format: 'mm/dd/yyyy',
+	    container: container,
+	    todayHighlight: true,
+	    autoclose: true,
+	  };
+	  date_input.datepicker(options);
+	})
+</script>
+<!--Alternative date picker but be careful of potential conflicts when combining js -->
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker3.min.css">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js">
+</script>
+
+</body>
+</html>

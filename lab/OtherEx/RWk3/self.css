@@ -1,0 +1,102 @@
+
+#auntbucky {
+	background-image: url("images/auntbucky.jpg");
+	background-size:cover;
+	background-position: top;
+}
+
+.navbar-default {
+	border-color: #fff;
+	background-color: #fff;
+}
+
+button.navbar-toggle.collapsed {
+	border-color: #fff;
+}
+
+ul.nav.navbar-nav.navbar-right{
+	padding-top: 0.4em;
+}
+
+.navbar-brand.brand {
+	color: #a6c23c;
+	font-size: 2em;
+	padding-left: 0em;
+	padding-top: 1em;
+}
+
+.navbar-brand.icon {
+	height:4.4em;
+}
+
+li {
+	font-family: 'Muli', sans-serif;
+	font-weight: 900;
+}
+
+h1 {
+	color: #a6c23c;
+	font-family: 'Muli', sans-serif;
+	font-weight: 400;
+}
+
+h2 {
+	color: #a6c23c;
+	font-family: 'Muli', sans-serif;
+	font-weight: 400;
+}
+h2.kerned {
+	letter-spacing:0.2em;
+}
+
+h3 {
+	color: #666;
+	font-family: 'Muli', sans-serif;
+	font-weight: 400;
+}
+
+a {
+	font-family: 'Muli', sans-serif;
+	font-weight: 900;
+}
+
+p {
+	font-family: 'Muli', sans-serif;
+	font-weight: 400;
+}
+
+label {
+	font-family: 'Muli', sans-serif;
+	font-weight: 400;
+}
+
+.jumbotron {
+	height: 32em;
+}
+
+h1.toptext {
+	color: #a6c23c;
+	text-align: right;
+	padding-right: 0.5em;
+	padding-top: 1.6em;
+}
+
+.social {margin: 0; padding: 0;}
+.social ul {margin: 1em 1em; padding: 5px;}
+.social ul li {
+	display: inline-block;
+	list-style: outside none none;
+	margin: 5px;
+}
+.social i{
+	background-color: #a6c23c;
+	border-radius: 50%;
+	color: #fff;
+	font-size: 22px;
+	height: 40px;
+	padding-top: 12px;
+	text-align: center;
+	transition: all 0.3s ease 0s;
+	width: 40px
+}
+.social i:hover {color: #dd4cdb;}

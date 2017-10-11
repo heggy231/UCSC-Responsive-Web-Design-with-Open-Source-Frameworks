@@ -1,0 +1,214 @@
+html {font size: 100%}
+
+.wrapper {width:93.75%;}
+
+.row { width:93.75%; margin:0 auto; background: #fff; }
+
+.box {
+	display:inline-block;
+	width:24.6%;
+	margin:0;
+	padding: 0;
+	min-height:20em;
+	vertical-align:top;
+}
+
+img.content {
+	width: 15em;
+	display: block;
+	margin: 0 auto;
+}
+
+h1{
+	font-size: 180%;
+	font-weight: bold;
+	line-height:1.8em;
+	font-family: 'Lato', sans-serif;
+}
+h1.light{
+	font-size: 180%;
+	font-weight: 300;
+	line-height:0.1em;
+	font-family: 'Lato', sans-serif;
+}
+
+h1.brand {
+	width: 50%;
+	float: left;
+	padding-top: 0;
+	padding-bottom: 0;
+	line-height: 1.5em;
+}
+
+h2{
+	font-size: 120%;
+	font-weight: bold;
+	line-height:5em;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+}	
+
+h3{
+	font-size: 110%;
+	font-weight: bold;
+	line-height:1.8em;
+	font-family: 'Lato', sans-serif;
+}
+
+p{
+	padding: 10px;
+	line-height:1.4em;
+	text-align: left;
+	font-family: 'Lato', sans-serif;
+}
+
+li{
+	font-family: 'Lato', sans-serif;
+}
+
+.cred {
+	width: 100%;
+	margin:0;
+	background: #fff;
+	float:left;
+}
+
+.cred p{
+	padding: 1em;
+}
+
+a {
+	color: #000;
+}
+
+/* Remove margins and padding from the list, and add a background color.*/
+
+ul.topnav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #ffffff;
+	width: 25em;
+	float: right;
+}
+
+/* FLoat the list items side by side */
+ul.topnav li {float: left;
+}
+/*Style the linkes inside the list items */
+ul.topnav li a {
+	display: inline-block;
+	color: #333;
+	text-align: center;
+	padding: 1.2em;
+	text-decoration: none;
+	transition: 0.3s;
+	font-size: 1.1em;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #eee;}
+
+/* Hide the list item that contains the linke that should open and close the topnav on small screens */
+ul.topnav li.hamburger {display: none}
+
+.full-width {
+	width:100%;
+	height:500px;
+}
+
+.icon {
+	display:inline-block;
+	height:1.8em
+}
+
+.in-line{
+	display:inline-block;
+	padding-left:1%;
+}
+
+.text-module {
+	text-align: right;
+	padding-left: 55em;
+	padding-top: 15em;
+	bottom:5em;
+    position:absolute;
+    z-index:1;
+}
+
+
+#lucinda {
+	background-image: url("DSC_0800-2.png");
+	background-size:cover;
+	background-position: top;
+}
+
+#lucy {
+	background-image: url("lucy.png");
+	background-size:cover;
+}
+.flexslider .slides li {
+    position:relative;
+}
+
+@media only screen and (max-width:980px) {
+	img.content {
+	width: 20em;
+	}
+	ul.topnav{
+		width: 12em;
+	}
+	.row{
+		width:100%;
+	}
+	.box{
+		display: inline-block;
+		width:49.6%;
+		margin:0;
+	}
+	ul.topnav li a {
+		font-size:1.4em;
+	}
+	ul.topnav li:not(:first-child) {display: none;}
+ 	ul.topnav li.hamburger {
+    	float: right;
+    	display: inline-block;
+	}	
+	ul.topnav.responsive {
+		position: relative;
+	}
+	ul.topnav.responsive li.hamburger {
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	    bottom:3em;
+	 }
+	ul.topnav.responsive li {
+	    float: none;
+	    display: inline;
+	}
+	ul.topnav.responsive li a {
+	    display: block;
+	    text-align: left;
+	}
+	h2, h3, p {margin-left: 5%; width: 90%;}
+}
+@media only screen and (max-width:768px) {
+	img.content {
+	width: 25em;
+	}
+	.row{
+		width:100%;
+	}
+	.box{
+		display: block;
+		width:100%;
+	}
+	ul.topnav li a {
+		font-size:1.4em;
+	}
+	h2, h3, p {margin-left: 5%; width: 90%;}
+}
+
+

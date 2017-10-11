@@ -80,5 +80,12 @@ h1 {
 
 body {
   position: relative;
-  padding-top: 80px;
+}
+ul.nav-pills {
+  top: 20px;
+  position: fixed;
+}
+div.col-sm-9 div {
+  height: 250px;
+  font-size: 28px;
 }

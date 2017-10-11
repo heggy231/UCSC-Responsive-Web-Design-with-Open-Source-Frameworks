@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Display-Responsive</title>
+
+<!--link rel='stylesheet' href='float.css' type='text/css' media='all'>-->
+<link rel='stylesheet' href='inline-block.css' type='text/css' media='all'>
+<script src="script.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Lato:300,900" rel="stylesheet">
+<link href="flexslider.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+<div class="row"> 
+<img src="lucy.png" class="icon" alt="girl icon"> </img>
+<h1 class="in-line">Zard's World</h1>
+<ul class="topnav">
+<li> &nbsp; </li>
+<li> <a href="#home">Home</a> </li>
+<li><a href="menu">Menu</a></li>
+<li> <a href="#about">About</a> </li>
+<li><a href="contact">Contact</a></li>
+<li class="hamburger">
+   <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+</li>
+</ul>
+</div>
+<div class="flexslider"> 
+    <ul class="slides">
+      <li><img src="new.png" alt="plants">
+            <span class="text-module">
+        <h1> Hello hello hello </h1> 
+        <h1 class="light"> I'm Lizzy </h1>
+      </span>
+      </li>
+      <li> <img src="shoecomposite.png" alt="plants" >
+      <span class="text-module">
+        <h1> Thanks for visiting </h1> 
+          <h1 class="light"> I love feedback </h1>
+      </span>
+      </li>
+      <li> <img src="plantgirl.png" alt="plants" >
+      <span class="text-module">
+        <h1> View my work </h1> 
+        <h1 class="light"> Or shoot me an email </h1>
+      </span>
+      </li>
+    </ul>
+  </div>  
+<div class="row">
+   <div class="box">
+    <h2>Box One</h2> 
+    <img class="content" src="square.png" alt="illustration" ></img>
+   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+   </div> 
+   <div class="box" ><h2>Box Two</h2>
+   <img class="content" src="gg.png" alt="illustration 1"></img>
+   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+   </div> 
+   <div class="box" ><h2>Box Three</h2>
+    <img class="content" src="Lungz.png" alt="illustration 2"></img>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+   </div> 
+   <div class="box" ><h2>Box Four</h2>
+   <img class="content" src="cat.png" alt="illustration 3"></img>
+   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+   </div> 
+</div>
+<div class="row">
+   <h3>For Simple Float</h3>
+   <p>Note the need for a clear because the outer block won't center if it is floated. Test what happens if the outer div, the row isn't floated.</p>
+   <h3>For Display Block</h3>
+   <p>Note the gap on some browsers because of the display:block bug. You can calculate around this because often your boxes have margins or you can simply use a float"left if you aren't planning on shuffling the order for mobile. Remove the comments from box one before moving to the next step.</p>
+ <h3>Display Table and Table Cell</h3>
+   <p>This allows you to shuffle the order of the boxes.</p>
+</div>
+<div class="cred"><p>&copy;Lizzy Klingen 2017</p></div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+<script defer src="jquery.flexslider.js"></script>
+<script defer src="flexslider.js"></script>
+</body>
+</html>
