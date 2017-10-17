@@ -4,3 +4,6 @@
 
 -  https://github.com/woocommerce/FlexSlider
 - http://tmhardy.com/dev/ucsc/rwd2017fa/teresa/ProjectA/index.html
+
+
+http://tmhardy.com/dev/ucsc/rwd2017fa/teresa/ProjectB/index.html

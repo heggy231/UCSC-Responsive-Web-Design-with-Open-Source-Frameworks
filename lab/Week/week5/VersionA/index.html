@@ -5,13 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
-    <title>Display-Responsive</title>
+    <title>Maudie FlexsliderA</title>
     <!-- reset stylesheet is to reduce browser inconsistencies in things like default line heights, margins and font sizes of headings -->
-    <link rel='stylesheet' href='../CSSReset/eric-meyer-reset.min.css' type='text/css' media='all' >
-    <link rel='stylesheet' href='floatHW.css' type='text/css' media='all'>
+    <link rel='stylesheet' href='eric-meyer-reset.min.css' type='text/css' media='all' >
+    <link rel='stylesheet' href='styleA.css' type='text/css' media='all'>
+    <link rel='stylesheet' href='flexslider.css' type='text/css' media='screen'>
+    <link rel='stylesheet' href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
+    <style>
+      .clear {
+          clear: both;
+      }
 
-    <!-- <link rel='stylesheet' href='inline-block.css' type='text/css' media='all'> -->
-    <!-- <link rel='stylesheet' href='display-table.css' type='text/css' media='all'> -->
+      /* fix flexslider dots and positioning */
+      .flexslider {
+          margin-bottom: 10px;
+          border: none;
+      }
+
+      .flex-control-nav {
+          bottom: 10px;
+      }
+
+      .flex-control-paging li a {
+          background: rgba(255, 255, 255, 0.5) none repeat scroll 0 0;
+      }
+
+      .flex-control-paging li a.flex-active {
+          background: rgba(255,255,255, 1) none repeat scroll 0 0;
+      }
+
+      .flex-direction-nav a::before {
+          color: #FFF;
+          text-shadow: 1px 1px 0 rgba(255,0,0,.6);
+      }
+
+      /*fix that img max-width in basic1.css from impacting flexslider images*/
+      /*fix right gap*/
+      .flex-direction-nav .flex-prev {
+          left: 0;
+      }
+
+      .flex-direction-nav .flex-next {
+          right: 0;
+          text-align: right;
+      }
+  </style>
+
   </head>
   <body>
     <div class="row"> 
@@ -24,23 +63,36 @@
           <li><a href="#contact">Contact</a></li>
           <li class = "icon" >
             <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-            <!-- Beware of soft wrap -->
           </li>
         </ul>
     </div>
 
-    <div class="row">
-      <img class="hero" src="images/maudiePaintStandSlider1.jpg" alt="Artist Maudie smiles with her painting">
-    </div>
 
-    <div class="row red">
-      <div class="one box"><h2>Journey</h2><img src="images/cat.jpg" class="fourup" alt="three adorable yellow eyed cats">
-      <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an </p> -->
-      </div> 
-      <div class="box two"><h2>Her Passion</h2><img src="images/cowTwin.jpg" alt="Glamorous cow with long eyelashes"></div> 
-      <div class="box three"><h2>Fun Facts</h2><img src="images/modelT.jpg" alt="Fashionable couple in classic car"></div> 
-      <div class="box four"><h2>Home Life</h2><img src="images/sandyCove.jpg" alt="Sweet home with ocean and seagulls"></div> 
-    </div>
+    <br class="clear">
+    <div class="flexslider">
+      <ul class="slides">
+        <li>
+            <img src="images/maudieHero1.jpg" alt="Artist Maudie smiles with her painting">
+            <img src="images/deerHero2.jpg" alt="mom baby deer summer day">
+            <img src="images/boatHero3.jpg" alt="peaceful ocean">
+        </li>
+      </ul><!-- .slides -->
+    </div><!--- .flexslider end -->
+
+    <div class="row">
+      <div class="one box">
+        <h2>Journey</h2>
+        <img src="images/cat.jpg" alt="three adorable yellow eyed cats">
+          <p class="margin-top"> Folk artist Maud Lewis, a physically challenged woman who found beauty in life’s simplicity. Born with juvenile rheumatoid arthritis that left her undersized and frail, Maud Dowley (Sally Hawkins) was shunted around to relatives in her youth. Told she couldn’t look after herself she was treated like an outsider by her family and rural Nova Scotian community. “Some people don’t like it if you’re different,” she says. In a bid to get out from under the thumb of her controlling aunt she answers a help wanted ad at the local general store. It leads her to Everett Lewis’ rundown one-room shack. He’s a man of few words, raised in an orphanage, now a loner who ekes out a living selling fish and chopped wood. </p>
+      </div> <!-- one box -->
+
+
+
+
+      <div class="box two"><h2>Her Passion</h2><img src="images/cowTwin.jpg" alt="Glamorous cow with long eyelashes"></div> <!-- two box -->
+      <div class="box three"><h2>Fun Facts</h2><img src="images/modelT.jpg" alt="Fashionable couple in classic car"></div> <!-- three box -->
+      <div class="box four"><h2>Home Life</h2><img src="images/sandyCove.jpg" alt="Sweet home with ocean and seagulls"></div> <!-- four box -->
+    </div> <!-- row -->
 
     <div class="row">
       <h3>Here's a time line of Mrs. Lewis's life</h3>
