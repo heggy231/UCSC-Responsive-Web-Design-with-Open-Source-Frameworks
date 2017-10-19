@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
+    <title>Maudie FlexsliderA</title>
+    <!-- reset stylesheet is to reduce browser inconsistencies in things like default line heights, margins and font sizes of headings -->
+    <!-- <link rel='stylesheet' href='eric-meyer-reset.min.css' type='text/css' media='all' > -->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="jquery.flexslider.js" type="text/javascript"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(window).load(function() {
+        $('.flexslider').flexslider();
+      });
+    </script>
+    <style>
+        .clear {clear: both; }
+        /* fix flexslider dots and positioning */
+        .flexslider { margin-bottom: 10px; border: none; }
+        .flex-control-nav { bottom: 10px; }
+        .flex-control-paging li a { background: rgba(255, 255, 255, 0.5) none repeat scroll 0 0;}
+        .flex-control-paging li a.flex-active { background: rgba(255,255,255, 1) none repeat scroll 0 0;}
+        .flex-direction-nav a::before { color: #FFF; text-shadow: 1px 1px 0 rgba(255,0,0,.6); }
+        /*fix that img max-width in basic1.css from impacting flexslider images*/
+        /*fix right gap*/
+        .flex-direction-nav .flex-prev { left:0; }
+      .flex-direction-nav .flex-next { right: 0; text-align: right; }
+        </style>
+  </head>
+  <body>
+
+    <div class="flexslider">
+      <ul class="slides">
+        <li>
+            <img src="images/maudieHero1.jpg" alt="Artist Maudie smiles with her painting"> 
+        </li>
+        <li>
+          <img src="images/deerHero2.jpg" alt="mom baby deer summer day">
+        </li>
+        <li>
+            <img src="images/boatHero3.jpg" alt="peaceful ocean">
+        </li>
+      </ul><!-- .slides -->
+    </div><!--- .flexslider end -->
+
+  
+    </div> <!-- .row -->
+    <!-- jQuery resource https://developers.google.com/speed/libraries/#jquery 
+    Read about \x3C: https://stackoverflow.com/questions/8231048/why-use-x3c-instead-of-when-generating-html-from-javascript
+    -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="jquery.js">\x3C/script>')</script>
+    <!-- FlexSlider Remeber to add cdn jquery script tage right b4 closing body tag-->
+    <script defer src="jquery.flexslider.js"></script>
+    <script> 
+    $(window).load(function(){
+        $('.flexslider').flexslider({
+         animation: "slide", 
+         animationLoop: true,
+         itemWidth: 210,
+         itemMargin: 5
+        });
+      });</script>
+  </body>
+</html>

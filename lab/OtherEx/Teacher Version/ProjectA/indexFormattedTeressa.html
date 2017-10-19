@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dinner in Kobe</title>
+
+    <link rel='stylesheet' href='basic1.css' type='text/css' media='all' >
+    <link rel="stylesheet" href="flexslider.css" type="text/css" media="screen" >
+    <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
+
+    <style>
+      .clear {clear: both; }
+      /* fix flexslider dots and positioning */
+      .flexslider { margin-bottom: 10px; border: none; }
+      .flex-control-nav { bottom: 10px; }
+      .flex-control-paging li a { background: rgba(255, 255, 255, 0.5) none repeat scroll 0 0;}
+      .flex-control-paging li a.flex-active { background: rgba(255,255,255, 1) none repeat scroll 0 0;}
+      .flex-direction-nav a::before { color: #FFF; text-shadow: 1px 1px 0 rgba(255,0,0,.6); }
+      /*fix that img max-width in basic1.css from impacting flexslider images*/
+      /*fix right gap*/
+      .flex-direction-nav .flex-prev { left:0; }
+      .flex-direction-nav .flex-next { right: 0; text-align: right; }
+    </style>
+  </head>
+<body>
+  <div class="row">
+    <h1 class="brand">Dinner in Kobe</h1>
+      <ul class="topnav">
+        <li>&nbsp;</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="icon">
+          <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+        </li>
+      </ul>
+  </div>
+
+  <div class="flexslider">
+    <ul class="slides">
+      <li>
+        <img src="images/hero1.jpg" alt="always" >
+      </li>
+      <li>
+        <img src="images/hero2.jpg" alt="use" >
+      </li>
+      <li>
+        <img src="images/hero3.jpg" alt="alt">
+      </li>
+      
+    </ul>
+  </div><!-- flexslider -->
+
+
+<div class="row"> 					<!--Beware of hard returns in this file-->
+
+  <div class="one box">
+    <h2>Appetizers</h2>
+    <img src="images/appetizer.jpg" alt="food">
+    <p class="margin-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+
+  <div class="two box">
+    <h2>Soup</h2>
+    <img src="images/soup.jpg" alt="soup">
+    <p class="margin-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+
+  <div class="three box">
+    <h2>Salad</h2>
+    <img src="images/salad.jpg" alt="salad">
+    <p class="margin-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+
+  <div class="four box">
+    <h2>Entree</h2>
+    <img src="images/kobe-beef.jpg" alt="entree">
+    <p class="margin-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div> 
+
+</div> 
+
+
+<div class="row"><p class="cred">Basic responsive example with images. &copy; TMHardy, all images are owned by me.</p></div>
+ <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+  <!-- FlexSlider -->
+  <script defer src="jquery.flexslider.js"></script>
+<script>
+function myFunction() {
+    document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+}
+// Can also be used with $(document).ready()
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
+});
+
+</script>
+</body>
+</html>
+
+

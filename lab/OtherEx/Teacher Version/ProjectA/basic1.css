@@ -19,9 +19,9 @@ body {
    color:#000; 
 } 
 h1,h2,h3,h4,h5,a  {
-	font-family: 'Merienda One', cursive;
-	color: #800;
-	}
+  font-family: 'Merienda One', cursive;
+  color: #800;
+  }
 p {
   padding: 0 5%;
    line-height:1.5em; 
@@ -133,5 +133,5 @@ ul.topnav li.icon {display: none;}
   }
 }
 @media screen and (max-width:780px) {
-h1.brand { font-size: 200%; }
+h1.brand { font-size: 120%; }
 }
