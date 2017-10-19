@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Maudie Project A</title>
+    <!-- reset stylesheet is to reduce browser inconsistencies in things like default line heights, margins and font sizes of headings -->
+    <link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
+    <link rel='stylesheet' href='eric-meyer-reset.min.css' type='text/css' media='all' >
+    <!-- jQuery UI stylesheet -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- Heggy stylesheet -->
+    <link rel='stylesheet' href='myStyle.css' type='text/css' media='all'>
+    <link rel='stylesheet' href='myStylejQueryUI.css' type='text/css' media='all'>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+    <!-- HTML5 shim and Repond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]> 
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+    <div class="row"> 
+      <a href="index.html"><img id="caticon" src="images/cat.jpg"  alt="cat icon"></a>
+      <h1 class="brand">Maudie Tribute Site</h1>
+        <ul class="topnav">
+          <li>&nbsp;</li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="jQueryUI.html">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class = "icon" >
+            <!-- javascript:void(0) means undefine > stay in same pg-->
+            <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+            <!-- Beware of soft wrap -->
+          </li>
+        </ul>
+    </div><!-- row -->
+    <div class="row"> 
+      <div id="accordion">
+        <h3>Maudie's Life</h3>
+        <div>
+          <p>
+          Lewis was born Maud Dowley on March 7, 1903 in South Ohio, Nova Scotia, the daughter of John and Agnes (Germain) Dowley.[3][4] She suffered from a result of juvenile rheumatoid arthritis. In 1935, her father died and in 1937, her mother followed. As was typical at the time, her brother inherited the family home. After living with her brother for a short while, she moved to Digby, Nova Scotia to live with her aunt.[3] Dowley was introduced to art by her mother, who instructed her in the making of watercolour Christmas cards to sell.[5] She began her artistic career by selling hand-drawn and painted Christmas cards.
+          </p>
+        </div>
+        <h3>Maudie's Art</h3>
+        <div>
+          <p>
+          Maud Lewis used bright colours in her paintings, and subjects were often of flowers, oxen teams, horses, birds, deer, or cats. Many of her paintings are of outdoor scenes, like Cape Island boats bobbing on the water, horses pulling sleigh, skaters, portraits of dogs, cats, deer, birds, and cows. Her paintings were inspired by childhood memories of the landscape and people around Yarmouth and South Ohio as well as Digby locations such as Point Prim and Bayview.</p>
+
+          <p>Christmas cards and calendars also provided influence. Most of her paintings are quite small - often no larger than eight by ten inches, although she is known to have done at least five paintings 24 inches by 36 inches. The size was limited by the extent she could move her arms. She used mostly wallboard and tubes of Tinsol, an oil-based paint. Lewis's technique consisted of first coating the board with white, then drawing an outline and then applying paint directly out of the tube. She never blended or mixed colours.</p>
+        </div>
+        <h3>Maudie's Education</h3>
+        <div>
+          <p>
+          Lewis had no formal training, but she got her start painting Christmas cards with her mother, which they sold for 25 cents. As an adult, she used leftover house paint to brighten walls, bread boxes, cookie sheets — even the stove — with butterflies, tulips and swans. Canvas was expensive and hard to come by, so Lewis painted on beaver boards and Masonite — and she did it all from her own imagination.
+          </p>
+        </div>
+        <h3>Maudie's Marriage</h3>
+        <div>
+          <p>
+          Dowley married Everett Lewis, a fish peddler from Marshalltown, on January 16, 1938, at the age of 34.[6] According to Everett, Maud unexpectedly showed up at his door step in response to an advertisement he had posted in the local stores looking for a "live-in or keep house" for a forty year old bachelor. Several weeks later, they were married. They moved into Everett's one-room house with a sleeping loft in Marshalltown, a few miles west of Digby. This house would operate as Maud's studio, where Everett would perform all of the housework.[7] Lewis lived most of her life in poverty with her husband in the one-room house. The house is now located in the Art Gallery of Nova Scotia in Halifax.
+          </p>
+          <p>
+          Maud Lewis accompanied her husband on his daily rounds peddling fish, bringing along Christmas cards that she had drawn. She would sell the cards for twenty five cents each. These cards proved popular with her husband's customers as he sold fish door-to-door and encouraged her to begin painting. She started painting on various other surfaces such as pulp boards (beaverboards), cookie sheets, and Masonite. Lewis was a prolific artist and painted on more or less every available surface in their tiny home: walls, doors, breadboxes, and even the stove. She completely covered the simple patterned commercial wallpaper with sinewy stems, leaves, and blossoms.[8] Everett encouraged Lewis to paint, and he bought her her first set of oils.
+          </p>
+        </div>
+      </div><!-- accordion -->
+    </div><!-- row -->
+    <div class="row">
+      <p class ="cred">Copyright &copy; Heggy Castaneda, 
+      Resource: 
+        <a href="https://timeline.com/maud-lewis-canadian-painter-79da8eabe9df"> Timeline </a> Biography 
+        <a href="https://shop.artgalleryofnovascotia.ca/products/maud-lewis-matted-print"> Art Gallery of Nova Scotia</a> for artist Lewis' painting images, 
+        <a href="http://sonyclassics.com/maudie/"> Mudie</a> movie scenes by sonyclassics
+        <a href="http://www.edu.pe.ca/threeoaks/art/601/lewis.htm"> Candian Database</a>
+      </p>
+    </div><!-- row -->
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="jquery-1.11.min.js">\x3C/script>')</script>
+    <!-- accordion -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#accordion" ).accordion();
+    } );
+    </script>
+
+    <!-- FlexSlider -->
+    <script defer src="jquery.flexslider.js"></script>
+    <script>
+      function myFunction() {
+          document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+      }
+      // Can also be used with $(document).ready()
+      $(window).load(function() {
+        $('.flexslider').flexslider({
+          animation: "slide"
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -25,15 +25,21 @@
       .flex-direction-nav .flex-prev { left:0; }
       .flex-direction-nav .flex-next { right: 0; text-align: right; }
     </style>
+    <!-- HTML5 shim and Repond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]> 
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
   <body>
     <div class="row"> 
       <a href="index.html"><img id="caticon" src="images/cat.jpg"  alt="cat icon"></a>
       <h1 class="brand">Maudie Tribute Site</h1>
-        <ul class="topnav" >
+        <ul class="topnav">
           <li>&nbsp;</li>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#menu">Menu</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="jQueryUI.html">Menu</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
           <li class = "icon" >
@@ -101,16 +107,15 @@
     <!-- FlexSlider -->
     <script defer src="jquery.flexslider.js"></script>
     <script>
-    function myFunction() {
-        document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
-    }
-    // Can also be used with $(document).ready()
-    $(window).load(function() {
-      $('.flexslider').flexslider({
-        animation: "slide"
+      function myFunction() {
+          document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+      }
+      // Can also be used with $(document).ready()
+      $(window).load(function() {
+        $('.flexslider').flexslider({
+          animation: "slide"
+        });
       });
-    });
-
     </script>
   </body>
 </html>
