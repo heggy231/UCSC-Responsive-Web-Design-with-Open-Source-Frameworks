@@ -18,44 +18,53 @@
     <![endif]-->
 	<link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet"> 
     <!-- Social icons my way --> 
-    <link href="css/font-awesome.css" rel="stylesheet" media="all">
+  <link href="css/font-awesome.css" rel="stylesheet" media="all">
 	<meta property="og:title" content="Responsive Web Design With Bootstrap">
-<meta property="og:image" content="http://www.tmhardy.com/dev/ucsc/rwd2017ucsc/FinishedProjects/ProjectB/images/sharetest.jpg">
-<meta property="og:url" content="http://www.tmhardy.com/dev/ucsc/rwd2017ucsc/FinishedProjects/ProjectB">
-<meta property="og:description" content="This is a test of the meta tags in a Bootstrap project in Responsive Web Design at UCSC Extension.">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:url" content="http://www.tmhardy.com/dev/ucsc/rwd2017ucsc/FinishedProjects/ProjectB">
-<meta name="twitter:title" content="Responsive Web Design With Bootstrap">
-<meta name="twitter:description" content="This is a test of the meta tags in a Bootstrap project in Responsive Web Design at UCSC Extension.">
-<meta name="twitter:image" content="http://www.tmhardy.com/dev/ucsc/rwd2017ucsc/FinishedProjects/ProjectB/images/sharetest.jpg">
-
-
+	<meta property="og:image" content="http://www.tmhardy.com/dev/ucsc/rwd2017ucsc/FinishedProjects/ProjectB/images/sharetest.jpg">
+	<meta property="og:url" content="http://www.tmhardy.com/dev/ucsc/rwd2017ucsc/FinishedProjects/ProjectB">
+	<meta property="og:description" content="This is a test of the meta tags in a Bootstrap project in Responsive Web Design at UCSC Extension.">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:url" content="http://www.tmhardy.com/dev/ucsc/rwd2017ucsc/FinishedProjects/ProjectB">
+	<meta name="twitter:title" content="Responsive Web Design With Bootstrap">
+	<meta name="twitter:description" content="This is a test of the meta tags in a Bootstrap project in Responsive Web Design at UCSC Extension.">
+	<meta name="twitter:image" content="http://www.tmhardy.com/dev/ucsc/rwd2017ucsc/FinishedProjects/ProjectB/images/sharetest.jpg">
 </head>
+
 <body>
-<nav class="navbar navbar-default"> 
-<div class="container">
+	<nav class="navbar navbar-default"> 
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> 
+					<span class="sr-only">Toggle navigation</span> 
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span> 
+					<span class="icon-bar"></span> 
+				</button> 
+				<a class="navbar-brand" href="#">Dinner in Kobe</a> 
+			</div>
+			
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active">
+						<a href="index.html">Home<span class="sr-only">(current)</span></a>
+					</li>
+					<li>
+						<a href="food-scrollspy.html">Food</a>
+					</li>
+					<li>
+						<a href="components.html">About</a>
+					</li>
+					<li>
+						<a href="forms.html">Contact</a>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container -->
+	</nav><!-- navbar navbar-default -->
 
-<!-- Brand and toggle get grouped for better mobile display -->
-	<div class="navbar-header">
-		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#">Dinner in Kobe</a> 
-	</div>
-	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		<ul class="nav navbar-nav navbar-right">
-			<li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
-			<li><a href="food-scrollspy.html">Food</a></li>
-			<li><a href="components.html">About</a></li>
-			<li><a href="forms.html">Contact</a></li>
-		</ul>
-	</div>
 
-<!-- /.navbar-collapse -->
-</div>
-<!-- /.container -->
-</nav> 
-
-
-<!-- Carousel
-    ================================================== -->
+<!-- Carousel ==================================== -->
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 <!-- Indicators -->
 		<ol class="carousel-indicators">
@@ -68,46 +77,44 @@
 				<img class="first-slide" src="images/hero2.jpg" alt="chefs"> 
 				<div class="container">
 					<div class="carousel-caption">
-						<h1>
-							Elegant Dinner
-						</h1>
+						<h1>Elegant Dinner</h1>
 						<p>
 						<a class="btn btn-lg btn-default" href="#our-home" role="button">Reservations</a>
 						</p>
-					</div>
-				</div>
-			</div>
+          </div><!-- carousel-caption -->
+        </div><!-- container -->
+      </div><!-- item active -->
 			<div class="item">
 				<img class="second-slide" src="images/hero1.jpg" alt="Tourist getaway room for rent"> 
 				<div class="container">
 					<div class="carousel-caption">
-						<h1>
-							Professional Chef
-						</h1>
+						<h1>Professional Chef</h1>
 						<p>
 						<a class="btn btn-lg btn-default" href="https://www.airbnb.com/rooms/10208020" target="_blank" role="button">Reservations</a>
 						</p>
-					</div>
-				</div>
-			</div>
+          </div><!-- carousel-caption -->
+        </div><!-- container -->
+      </div><!-- item -->
 			<div class="item">
 				<img class="third-slide" src="images/hero3.jpg" alt="Special event venue"> 
 				<div class="container">
 					<div class="carousel-caption">
-						<h1>
-							Historic Kobe, Japan
-						</h1>
+						<h1>Historic Kobe, Japan</h1>
 						<p>
 						<a class="btn btn-lg btn-default" href="#contact" role="button">Learn more</a>
 						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> 
-	</div>
-
-<!-- /.carousel -->
+          </div><!-- carousel-caption -->
+        </div><!-- container -->
+      </div><!-- item -->
+		</div><!-- carousel-inner -->
+		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> 
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span> 
+		</a> 
+		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span> </a> 
+	</div><!-- /.carousel slide -->
 
 	<div class="container">
 		<div class="row">
@@ -146,9 +153,9 @@
 				<p class="margin-top">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 				</p>
-			</div>
-		</div>
-	</div>
+			</div><!-- col-sm-6-->
+		</div><!-- row -->
+	</div><!-- container --> 
 <footer class="footer">
 <div class="container">
 <div class="col-md-3"><h3>Yoshi's Restaurant</h3><p>Address goes here</p><p>Phone goes here</p><p>Hours: etc</p><p><span class="glyphicon glyphicon-star" aria-hidden="true"></span>Bootstrap Demonstration <br>&copy; 2016 TMHardy <br> All images are owned by me.</p></div>
@@ -187,4 +194,4 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4mWGefkw-ISqKU-2Ty_zgQFKYHQ6ttUU&callback=initialize"
     async defer></script>
   </body>
-</html>
+</html>ß
