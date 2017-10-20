@@ -17,7 +17,8 @@
     <!-- jQuery UI stylesheet -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <!-- Heggy stylesheet -->
-    <link rel='stylesheet' href='myStyle.css' type='text/css' media='all'>
+		<link rel='stylesheet' href='myStyle.css' type='text/css' media='all'>
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
 
     <!-- HTML5 shim and Repond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,25 +45,22 @@
         
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
           <ul class="nav navbar-nav navbar-right">
-            <li class="active">
+            <li>
               <a href="index.html">Home<span class="sr-only">(current)</span></a>
             </li>
             <li>
-              <a href="scrollspy.html">Menu</a>
+              <a href="scrollspy.html">Bio</a>
             </li>
             <li>
               <a href="components.html">About</a>
             </li>
-            <li>
+            <li class="active">
               <a href="forms.html">Contact</a>
             </li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container -->
-    </nav><!-- navbar navbar-default -->		
-
-
-
+    </nav><!-- navbar navbar-default -->
   <!-- Carousel -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
@@ -197,6 +195,7 @@
 				</p>
 			</div>
 		</div><!-- accordion -->
+<!-- FORM -->
     <div class="row cushion">
       <div class="col-xs-12 col-sm-3 center">
         <h2>Reservations</h2>
@@ -225,54 +224,60 @@
         </form>
       </div><!--col -xs-12 col-sm-3-->
     </div><!--row for form-->
+	<!-- myFooter copyrights -->
+	<footer class="footer"> 
+		<div class="container">
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<h3>Resource:</h3>
+					<p>
+						<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+						Copyright &copy; HCastaneda
+					</p>
+						<a href="https://timeline.com/maud-lewis-canadian-painter-79da8eabe9df"> Timeline</a>
 
 
-    <div class="row">
-      <div class="social col-md-12 col-sm-12">
-          <ul>
-              <li>
-                <a target="blank" href="https://www.facebook.com/MaudieTheMovie/">
-                <i class="fa fa-lg fa-facebook"></i>
-                </a>
-              </li>
-              <li>
-                <a target="_blank" href="https://www.linkedin.com/pulse/aisling-walsh-frames-cinematic-picture-maudie-trevor-hogg/">
-                <i class="fa fa-lg fa-linkedin"></i>
-                </a>
-              </li>
-              <li>
-                <a target="_blank" href="https://plus.google.com/+BlackSheepGalleryHeadofJeddore">
-                <i class="fa fa-lg fa-google-plus"></i>
-                </a>
-              </li>
-          </ul>
-      </div> <!-- social col-md-12-->
-		</div><!--row for social and my footer-->
-	</div><!--container-fluid from the top of bootstrap-->
-
-      <!-- myFooter copyrights -->
-      <footer class="footer"> 
-        <p>Copyright &copy; Heggy Castaneda, 
-            Resource: 
-              <a href="https://timeline.com/maud-lewis-canadian-painter-79da8eabe9df"> Timeline </a> Biography 
-              <a href="https://shop.artgalleryofnovascotia.ca/products/maud-lewis-matted-print"> Art Gallery of Nova Scotia</a> for artist Lewis' painting images, 
-              <a href="http://sonyclassics.com/maudie/"> Mudie</a> movie scenes by sonyclassics
-              <a href="http://www.edu.pe.ca/threeoaks/art/601/lewis.htm"> Candian Database</a>
-        </p>
-      </footer> <!-- end myFooter copyrights -->
+						<a href="https://shop.artgalleryofnovascotia.ca/products/maud-lewis-matted-print"> Art Gallery of Nova Scotia</a> for artist Lewis' painting images
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-    $( function() {
-      $( "#accordion" ).accordion();
-    } );
-    </script>
+						<a href="http://sonyclassics.com/maudie/">Mudie</a>Sonyclassics
+
+
+						<a href="http://www.edu.pe.ca/threeoaks/art/601/lewis.htm">Candian Database Biography</a>
+				</div> <!-- social col-md-12 -->
+			</div><!-- container--> 
+			<div class="container">
+				<div class="social col-md-3">
+						<ul>
+								<li>
+									<a target="blank" href="https://www.facebook.com/MaudieTheMovie/">
+										<i class="fa fa-lg fa-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a target="_blank" href="https://www.linkedin.com/pulse/aisling-walsh-frames-cinematic-picture-maudie-trevor-hogg/">
+										<i class="fa fa-lg fa-linkedin"></i>
+									</a>
+								</li>
+								<li>
+									<a target="_blank" href="https://plus.google.com/+BlackSheepGalleryHeadofJeddore">
+										<i class="fa fa-lg fa-google-plus"></i>
+									</a>
+								</li>
+						</ul>
+				</div> <!-- social col-md-3 -->
+		</div><!-- container--> 
+	</footer> <!-- end myFooter copyrights -->
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+	$( function() {
+		$( "#accordion" ).accordion();
+	} );
+	</script>
 
   </body>
 </html>
